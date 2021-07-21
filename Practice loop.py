@@ -11,16 +11,12 @@ if answer == 'yes' or answer == 'Yes' or answer == 'Yeah' or answer == 'yeah':
         print("Take it and go outside")
     elif answer2 == 'no' or answer2 == 'No':
         print("wait")
-        print('Is it still raining?')
-        answer3=input()
-        if answer3=='no':
-            print("You can go out now")
-        if answer3=='yes':
-            print('keep waiting')
-            
-
-
-
-
-
+        while True:
+            print('Is it still raining?')
+            answer3=input()
+            if answer3=='no':
+                print("You can go out now")
+                break
+            if answer3=='yes' or answer3 == 'Yes':
+                print('keep waiting')
 

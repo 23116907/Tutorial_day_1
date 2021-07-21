@@ -9,5 +9,15 @@ secretNumber = random.randint(1, 20)
 for guessesTaken in range(1, 7):
     print('Take a guess')
     guess = int(input())
-if guess > secretNumber:
-    print("Too high" + name)
+
+    if guess > secretNumber:
+        print("Too high, " + name)
+    elif guess < secretNumber:
+        print('Too low')
+    elif guess == secretNumber:
+        print('Congrats ' + name + '! You guessed my number in ' + str(guessesTaken) + ' guesses')
+        break #This condition is for the correct guess!
+else:
+    print('Nope. The number was ' + str(secretNumber) + '. Better luck next time.')
+    
+
