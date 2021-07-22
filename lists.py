@@ -44,3 +44,21 @@ print(list('Hello'))
 name = 'Shravan the coder'
 newname = name[0:11] + ' hardworking ' + name[12:17]
 print(newname)
+
+def eggs(cheese):
+    cheese.append('Hello')
+spam = [1, 2, 3]
+eggs(spam)
+print(spam)
+
+import copy
+span = ['A', 'B', 'C', 'D']
+cheese = copy.deepcopy(span)
+print(cheese)
+
+fruits = ['apples',
+          'orange',
+          'bananas',
+          'lemons']
+print('Four score and seven' +\
+      ' years ago')
